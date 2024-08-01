@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Login from "./Components/Login/Login"
 import Register from "./Components/Register/Register"
 
@@ -8,12 +8,12 @@ const App = () => {
     <div>
         
     <Router>
-            <Routes>
-              <Route path="/" element={"welcome the expense tracker app"}/>
+           
+               <Route path="/" element={"welcome the expense tracker app"}/>
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 
-            </Routes>
+           
         </Router>
               
     </div>
