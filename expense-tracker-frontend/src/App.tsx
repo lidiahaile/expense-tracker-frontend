@@ -9,6 +9,7 @@ const App = () => {
         
     <Router>
             <Routes>
+              <Route path="/" element={"welcome the expense tracker app"}/>
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 
