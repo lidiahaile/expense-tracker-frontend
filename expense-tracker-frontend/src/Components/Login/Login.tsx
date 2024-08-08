@@ -1,4 +1,4 @@
-
+// src/components/Login.tsx
 import React, { useState } from 'react';
 import { loginUser } from '../../api/api';
 
@@ -11,7 +11,7 @@ const Login: React.FC = () => {
     e.preventDefault();
     try {
       const response = await loginUser(username, password);
-      localStorage.setItem('token', response.token); // Assuming response contains a JWT token
+      localStorage.setItem('token', response.token); 
       // Redirect to dashboard or show success message
     } catch (error) {
       console.error('Login failed', error);
@@ -39,3 +39,4 @@ const Login: React.FC = () => {
 };
 
 export default Login;
+

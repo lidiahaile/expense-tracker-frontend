@@ -1,4 +1,4 @@
-
+// src/components/ExpenseList.tsx
 import React, { useEffect, useState } from 'react';
 import { getUserExpenses } from '../../api/api';
 
@@ -41,3 +41,4 @@ const ExpenseList: React.FC = () => {
 };
 
 export default ExpenseList;
+
